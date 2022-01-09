@@ -54,8 +54,8 @@ public class Cmd_Vcspeaker implements CmdSubstrate {
                        SlashCommandEvent event, String subCmd) {
         switch (subCmd) {
             case "server:add" -> addServer(guild, channel, member, event);
-            case "server:notify" -> removeServer(guild, member, event);
-            case "server:remove" -> setNotifyChannel(guild, channel, member, event);
+            case "server:remove" -> removeServer(guild, member, event);
+            case "server:notify" -> setNotifyChannel(guild, channel, member, event);
         }
     }
 
